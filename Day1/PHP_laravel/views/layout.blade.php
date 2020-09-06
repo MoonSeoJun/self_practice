@@ -8,11 +8,11 @@
     <title>@yield('title', 'Laravel')</title>
 </head>
 <body>
-    @yield('content')
     <ul>
         <li><a href="/">Welcome</a> </li>
         <li><a href="/Korean">korean</a> </li>
         <li><a href="/English">English</a> </li>
     </ul>
+    @yield('content')
 </body>
 </html>

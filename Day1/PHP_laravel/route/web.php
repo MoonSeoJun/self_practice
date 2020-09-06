@@ -17,24 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/Korean', function (){
-    $korean = [
-      '동백꽃',
-      '파수꾼',
-      '치부'
-    ];
-    return view('hello',[
-        'koreans' => $korean
-    ]);
-});
+Route::get('/Korean', 'Bookcontroller@korean');
 
-Route::get('/English', function (){
-    $English = [
-        'Harry Poter',
-        'Tom and Jerry',
-        'Dr.gikill and Hide'
-    ];
-   return view('contact',[
-       'Englishs' => $English
-   ]);
-});
+Route::get('/English','Bookcontroller@english');
