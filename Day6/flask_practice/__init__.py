@@ -20,7 +20,8 @@ def create_app():
     """테이블 생성"""
     from . import models
 
-    from .views import main_view
+    from .views import main_view, question_view
     app.register_blueprint(main_view.bp)
+    app.register_blueprint(question_view.bp)
 
     return app
